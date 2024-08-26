@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "/15dgc",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/15dgc",
+      "destination": "/index.html"
+    }
+  ]
+}
