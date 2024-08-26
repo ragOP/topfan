@@ -5,15 +5,11 @@
       "destination": "/index.html"
     }
   ],
-  "headers": [
+  "redirects": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex"
-        }
-      ]
+      "source": "/",
+      "destination": "/404.html",
+      "permanent": false
     }
   ]
 }
