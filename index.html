@@ -3796,7 +3796,7 @@
         .text-legacy .te-scope-desktop,
         .text-legacy .te-scope-mobile {
             position: absolute;
-            top: 10px;
+            top: -27px;
             bottom: 10px;
             left: 10px;
             right: 10px;
@@ -4959,9 +4959,32 @@
 </head>
 
 <body class="">
-    <div style="position: absolute; top: 30px; z-index: 10000;">
+    <style>
+        #image-container {
+            position: absolute;
+            top: 30px;
+            z-index: 10000;
+            width: 100%;
+            display: none;
+        }
+        #image-container img {
+            width: 100%;
+        }
+    </style>
+    <div id="image-container">
         <img src="baarish.GIF" alt="" style="width: 100%;">
     </div>
+    <script>
+    function showImageFor5Seconds() {
+        const imageContainer = document.getElementById('image-container');
+        console.log(imageContainer, "sdfhifsds")
+        imageContainer.style.display = 'block';
+        setTimeout(() => {
+            imageContainer.style.display = 'none';
+        }, 2000);
+    }
+    window.onload = showImageFor5Seconds;
+</script>
     <div id="modal-checkout"></div>
     <div class="cvt-1568371626-main-page-background"></div>
     <div class="main-page page-section funnel-entry-page">
@@ -4978,10 +5001,15 @@
         <div class=" cvt-1568371626-box d2 m1 " id="boxd07dfbb5-121c-dcb0-a7fb-84cbbf755215">
             <div class=" cvt-1568371626-element-body lazy-bg no-lazy-bg-mobile c0 c1 c2 c5 ">
                 <div class="te-scope te-scope-desktop d3 m2">
-                    <h2 class="d4 m3 m4"><span class=" d5 m4 m5">Your order is placed successfully!</span></h2>
+                    <h2 class="d4 m3 m4"><span class=" test d5 m4 m5">Your order is placed successfully!</span></h2>
                 </div>
             </div>
         </div>
+        <style>
+            .test{
+                margin-top: -40px;
+            }
+        </style>
         <div class=" cvt-1568371626-box d1 d7 m7 " id="boxeb427a71-abd8-7d4f-8d6d-b39b0fdd8452">
             <div class=" cvt-1568371626-element-body lazy-bg c0 c1 c2 c5 lazy-bg no-lazy-bg-mobile " title=""></div><img
                 class=" cvt-1568371626-element-body c0 c1 c2 c5 cvt-1568371626-image-element lazy-bg no-lazy-bg-mobile "
