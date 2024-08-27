@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'ITC Garde Gothic';
+    src: url('path-to-your-font-file/ITCGardeGothic.woff2') format('woff2'),
+         url('path-to-your-font-file/ITCGardeGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.f-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+}
+#arrow, #arrow1 {
+    display: none;
+}
+.footer {
+    font-family: 'ITC Garde Gothic', sans-serif;
+    background-color: #111;
+    color: #fff;
+    padding: 40px 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-top: 80px;
+    padding-right: 300px;
+}
+.signup input::placeholder {
+    color: #ddd; /* Change this to your desired color */
+    opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+.footer-menu,
+.main-menu,
+.signup {
+    flex: 1 1 0px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.footer-menu h4,
+.main-menu h4,
+.signup h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer; 
+}
+
+.footer-menu ul,
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.menu-items.open {
+    max-height: 200px;
+}
+
+.footer-menu li,
+.main-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a,
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover,
+.main-menu a:hover {
+    color: #ddd;
+}
+
+.signup p {
+    margin-bottom: 15px;
+}
+
+.signup form {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 8px 12px;
+    border-radius: 2px;
+    border: #575555 1px solid;
+    width: 250px;
+}
+
+.email-icon {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.signup input {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    flex: 1;
+    outline: none;
+    font-size: 16px;
+
+}
+
+.powered-by {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 0px 10px;
+        flex-direction: column;
+    }
+
+    .signup form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .signup input {
+        flex-grow: 1;
+    }
+    #arrow, #arrow1 {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 10px;
+    }
+
+    .footer-menu ul,
+    .main-menu ul {
+        border-bottom: 1px solid #3a3939;
+    }
+    .footer-menu,
+.main-menu
+ {
+    flex: 1 1 0px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+#arrow, #arrow1 {
+    display: inline-block;
+}
+}

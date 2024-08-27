@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/your-font-kit.css">
+
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-menu">
+            <div class="f-title">
+                <h4 class="menu-title" onclick="toggleFooterMenu()">
+                    FOOTER MENU
+                </h4>
+                <div id="arrow"><i class="fas fa-chevron-down"></i>
+</div>
+            </div>
+            <ul class="menu-items" id="footerMenu">
+                <li><a href="/search">Search</a></li>
+                <li><a href="/refund-policy">Refund Policy</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-and-conditions">Terms And Conditions</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class='border'></div>
+        <div class="main-menu">
+            <div class="f-title">
+                <h4 class="menu-title" onclick="toggleMainMenu()">MAIN MENU 
+                </h4>
+                <div id="arrow1"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            
+            <ul class="menu-items" id="mainMenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/catalog">Catalog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <h4>SIGN UP AND SAVE</h4>
+            <p>Subscribe to get special offers, free giveaways, and <br> once-in-a-lifetime deals.</p>
+            <form>
+                <div class="email-icon">
+                    <i class="far fa-envelope"></i>
+                </div>
+                <input type="email" placeholder="Enter your email" />
+            </form>
+        </div>
+    </footer>
+    
+    <script src="footer.js"></script>
+</body>
+</html>
