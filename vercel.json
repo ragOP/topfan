@@ -3,6 +3,10 @@
     {
       "source": "/15dgc",
       "destination": "/index.html"
+    },
+    {
+      "source": "/abba",
+      "destination": "/abba.html"
     }
   ],
   "redirects": [
